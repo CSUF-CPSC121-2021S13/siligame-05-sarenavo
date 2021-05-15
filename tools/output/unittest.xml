@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="49" failures="1" disabled="0" errors="0" time="5.572" timestamp="2021-05-14T23:07:33" name="AllTests">
+  <testsuite name="GameElement" tests="4" failures="0" disabled="0" errors="0" time="0.001" timestamp="2021-05-14T23:07:33">
+    <testcase name="DefaultConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="GameElement" />
+    <testcase name="ParametrizedConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="GameElement" />
+    <testcase name="IntersectsWithGameElement" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="GameElement" />
+    <testcase name="IsOutOfBounds" status="run" result="completed" time="0.001" timestamp="2021-05-14T23:07:33" classname="GameElement" />
+  </testsuite>
+  <testsuite name="Opponent" tests="6" failures="0" disabled="0" errors="0" time="0.537" timestamp="2021-05-14T23:07:33">
+    <testcase name="InheritsFromGameElement" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="Opponent" />
+    <testcase name="DefaultConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="Opponent" />
+    <testcase name="ParemterizedConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="Opponent" />
+    <testcase name="Draw" status="run" result="completed" time="0.535" timestamp="2021-05-14T23:07:33" classname="Opponent" />
+    <testcase name="Move" status="run" result="completed" time="0.001" timestamp="2021-05-14T23:07:33" classname="Opponent" />
+    <testcase name="LaunchProjectile" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="Opponent" />
+  </testsuite>
+  <testsuite name="OpponentProjectile" tests="5" failures="0" disabled="0" errors="0" time="0.517" timestamp="2021-05-14T23:07:33">
+    <testcase name="InheritsFromGameElement" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="OpponentProjectile" />
+    <testcase name="DefaultConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="OpponentProjectile" />
+    <testcase name="ParemterizedConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:33" classname="OpponentProjectile" />
+    <testcase name="Draw" status="run" result="completed" time="0.514" timestamp="2021-05-14T23:07:33" classname="OpponentProjectile" />
+    <testcase name="Move" status="run" result="completed" time="0.002" timestamp="2021-05-14T23:07:34" classname="OpponentProjectile" />
+  </testsuite>
+  <testsuite name="Player" tests="6" failures="0" disabled="0" errors="0" time="0.54" timestamp="2021-05-14T23:07:34">
+    <testcase name="InheritsFromGameElement" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="Player" />
+    <testcase name="DefaultConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="Player" />
+    <testcase name="ParemterizedConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="Player" />
+    <testcase name="Draw" status="run" result="completed" time="0.537" timestamp="2021-05-14T23:07:34" classname="Player" />
+    <testcase name="IntersectsWithOpponentsAndProjectiles" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="Player" />
+    <testcase name="Move" status="run" result="completed" time="0.001" timestamp="2021-05-14T23:07:34" classname="Player" />
+  </testsuite>
+  <testsuite name="PlayerProjectile" tests="6" failures="0" disabled="0" errors="0" time="0.518" timestamp="2021-05-14T23:07:34">
+    <testcase name="InheritsFromGameElement" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="PlayerProjectile" />
+    <testcase name="DefaultConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="PlayerProjectile" />
+    <testcase name="ParemterizedConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:34" classname="PlayerProjectile" />
+    <testcase name="Draw" status="run" result="completed" time="0.515" timestamp="2021-05-14T23:07:34" classname="PlayerProjectile" />
+    <testcase name="IntersectsWithOpponent" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:35" classname="PlayerProjectile" />
+    <testcase name="Move" status="run" result="completed" time="0.001" timestamp="2021-05-14T23:07:35" classname="PlayerProjectile" />
+  </testsuite>
+  <testsuite name="Game" tests="22" failures="1" disabled="0" errors="0" time="3.451" timestamp="2021-05-14T23:07:35">
+    <testcase name="DefaultConstructor" status="run" result="completed" time="0.001" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="ParametrizedConstructor" status="run" result="completed" time="0" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="CreateOpponents" status="run" result="completed" time="0.056" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="MoveActiveGameElements" status="run" result="completed" time="0.059" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="MoveInActiveGameElements" status="run" result="completed" time="0.049" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="LaunchProjectiles" status="run" result="completed" time="0.061" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="FilterIntersectionsWithOpponentProjectile" status="run" result="completed" time="0.041" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="FilterIntersectionsWithOpponentProjectileNoIntersect" status="run" result="completed" time="0.035" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="FilterIntersectionsWithOpponent" status="run" result="completed" time="0.051" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="FilterIntersectionsWithOpponentNoIntersect" status="run" result="completed" time="0.056" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="Score" status="run" result="completed" time="0.057" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="ScoreInactivePlayer" status="run" result="completed" time="0.053" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="RemoveInactive" status="run" result="completed" time="0.06" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="Init" status="run" result="completed" time="0.035" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="UpdateScreen" status="run" result="completed" time="1.703" timestamp="2021-05-14T23:07:35" classname="Game" />
+    <testcase name="UpdateScreenNoElements" status="run" result="completed" time="0.502" timestamp="2021-05-14T23:07:37" classname="Game" />
+    <testcase name="OnAnimationStep" status="run" result="completed" time="0.619" timestamp="2021-05-14T23:07:38" classname="Game">
+      <failure message="../settings/unittest.cc:1015&#x0A;Death test: (OnAnimationStep(),exit(0))&#x0A;    Result: died but not with expected exit code:&#x0A;            Exited with exit status 1&#x0A;Actual msg:&#x0A;[  DEATH   ] AddressSanitizer:DEADLYSIGNAL&#x0A;[  DEATH   ] =================================================================&#x0A;[  DEATH   ] ==32332==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000010 (pc 0x0000004de57b bp 0x7fff958e59d0 sp 0x7fff958e59b0 T0)&#x0A;[  DEATH   ] ==32332==The signal is caused by a READ memory access.&#x0A;[  DEATH   ] ==32332==Hint: address points to the zero page.&#x0A;[  DEATH   ]     #0 0x4de57b in GameElement::GetX() const (/home/student/siligame-05-sarenavo/tools/output/unittest+0x4de57b)&#x0A;[  DEATH   ]     #1 0x6cc12b in OnAnimationStep() (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6cc12b)&#x0A;[  DEATH   ]     #2 0x6ce3fa in Game_OnAnimationStep_Test::TestBody() (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6ce3fa)&#x0A;[  DEATH   ]     #3 0x7468d0 in void testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2433:27&#x0A;[  DEATH   ]     #4 0x7468d0 in void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2469:52&#x0A;[  DEATH   ]     #5 0x73aae5 in testing::Test::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2508:50&#x0A;[  DEATH   ]     #6 0x73aae5 in testing::Test::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2498:6&#x0A;[  DEATH   ]     #7 0x73ac44 in testing::TestInfo::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2684:14&#x0A;[  DEATH   ]     #8 0x73ac44 in testing::TestInfo::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2657:6&#x0A;[  DEATH   ]     #9 0x73ad2c in testing::TestSuite::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2816:31&#x0A;[  DEATH   ]     #10 0x73ad2c in testing::TestSuite::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2795:6&#x0A;[  DEATH   ]     #11 0x73b24b in testing::internal::UnitTestImpl::RunAllTests() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:5338:47&#x0A;[  DEATH   ]     #12 0x746e40 in bool testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt;(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2433:27&#x0A;[  DEATH   ]     #13 0x746e40 in bool testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt;(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2469:52&#x0A;[  DEATH   ]     #14 0x73b47b in testing::UnitTest::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:4925:55&#x0A;[  DEATH   ]     #15 0x6e6610 in RUN_ALL_TESTS() (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6e6610)&#x0A;[  DEATH   ]     #16 0x6d74c1 in main (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6d74c1)&#x0A;[  DEATH   ]     #17 0x7fb38e0f60b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16&#x0A;[  DEATH   ]     #18 0x4333fd in _start (/home/student/siligame-05-sarenavo/tools/output/unittest+0x4333fd)&#x0A;[  DEATH   ] &#x0A;[  DEATH   ] AddressSanitizer can not provide additional info.&#x0A;[  DEATH   ] SUMMARY: AddressSanitizer: SEGV (/home/student/siligame-05-sarenavo/tools/output/unittest+0x4de57b) in GameElement::GetX() const&#x0A;[  DEATH   ] ==32332==ABORTING&#x0A;[  DEATH   ] &#x0A;    Should not crash or infinitely loop." type=""><![CDATA[../settings/unittest.cc:1015
+Death test: (OnAnimationStep(),exit(0))
+    Result: died but not with expected exit code:
+            Exited with exit status 1
+Actual msg:
+[  DEATH   ] AddressSanitizer:DEADLYSIGNAL
+[  DEATH   ] =================================================================
+[  DEATH   ] ==32332==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000010 (pc 0x0000004de57b bp 0x7fff958e59d0 sp 0x7fff958e59b0 T0)
+[  DEATH   ] ==32332==The signal is caused by a READ memory access.
+[  DEATH   ] ==32332==Hint: address points to the zero page.
+[  DEATH   ]     #0 0x4de57b in GameElement::GetX() const (/home/student/siligame-05-sarenavo/tools/output/unittest+0x4de57b)
+[  DEATH   ]     #1 0x6cc12b in OnAnimationStep() (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6cc12b)
+[  DEATH   ]     #2 0x6ce3fa in Game_OnAnimationStep_Test::TestBody() (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6ce3fa)
+[  DEATH   ]     #3 0x7468d0 in void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2433:27
+[  DEATH   ]     #4 0x7468d0 in void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2469:52
+[  DEATH   ]     #5 0x73aae5 in testing::Test::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2508:50
+[  DEATH   ]     #6 0x73aae5 in testing::Test::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2498:6
+[  DEATH   ]     #7 0x73ac44 in testing::TestInfo::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2684:14
+[  DEATH   ]     #8 0x73ac44 in testing::TestInfo::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2657:6
+[  DEATH   ]     #9 0x73ad2c in testing::TestSuite::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2816:31
+[  DEATH   ]     #10 0x73ad2c in testing::TestSuite::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2795:6
+[  DEATH   ]     #11 0x73b24b in testing::internal::UnitTestImpl::RunAllTests() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:5338:47
+[  DEATH   ]     #12 0x746e40 in bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2433:27
+[  DEATH   ]     #13 0x746e40 in bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:2469:52
+[  DEATH   ]     #14 0x73b47b in testing::UnitTest::Run() obj-x86_64-linux-gnu/googletest/./googletest/src/gtest.cc:4925:55
+[  DEATH   ]     #15 0x6e6610 in RUN_ALL_TESTS() (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6e6610)
+[  DEATH   ]     #16 0x6d74c1 in main (/home/student/siligame-05-sarenavo/tools/output/unittest+0x6d74c1)
+[  DEATH   ]     #17 0x7fb38e0f60b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+[  DEATH   ]     #18 0x4333fd in _start (/home/student/siligame-05-sarenavo/tools/output/unittest+0x4333fd)
+[  DEATH   ] 
+[  DEATH   ] AddressSanitizer can not provide additional info.
+[  DEATH   ] SUMMARY: AddressSanitizer: SEGV (/home/student/siligame-05-sarenavo/tools/output/unittest+0x4de57b) in GameElement::GetX() const
+[  DEATH   ] ==32332==ABORTING
+[  DEATH   ] 
+    Should not crash or infinitely loop.]]></failure>
+    </testcase>
+    <testcase name="OnAnimationStepProjectiles" status="run" result="skipped" time="0" timestamp="2021-05-14T23:07:38" classname="Game" />
+    <testcase name="OnMouseEvent" status="run" result="skipped" time="0" timestamp="2021-05-14T23:07:38" classname="Game" />
+    <testcase name="OnMouseEventDragged" status="run" result="skipped" time="0" timestamp="2021-05-14T23:07:38" classname="Game" />
+    <testcase name="OnMouseEventPressed" status="run" result="skipped" time="0" timestamp="2021-05-14T23:07:38" classname="Game" />
+    <testcase name="OnMouseEventOutOfBounds" status="run" result="skipped" time="0" timestamp="2021-05-14T23:07:38" classname="Game" />
+  </testsuite>
+</testsuites>
