@@ -79,10 +79,10 @@ class Game : public graphics::AnimationEventListener,
     winning_score_ += winning_points_;
     gamescreen.DrawRectangle(0, 0, gamescreen.GetWidth(),
                              gamescreen.GetHeight(), 255, 255, 255);
-    gamescreen.DrawText(0, 570, winning_score_, 25, 190, 20, 255);
+    gamescreen.DrawText(570, 0, winning_score_, 25, 0, 255, 255);
     if (loser_ == true) {
       gamescreen.DrawText(gamescreen.GetWidth() * 0, gamescreen.GetHeight() * 0,
-                          "Lol you lost.", 50, 190, 20, 225);
+                          "Lol you lost.", 50, 0, 255, 225);
     }
     for (int j = 0; j < myOpponent.size(); j++) {
       if (myOpponent[j]->GetIsActive()) {
