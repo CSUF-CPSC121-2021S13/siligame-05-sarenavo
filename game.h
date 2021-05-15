@@ -19,7 +19,7 @@ class Game : public graphics::AnimationEventListener,
 
   void CreateOpponents() {
     std::unique_ptr<Opponent> abg =
-      std::make_unique<Opponent>(gamescreen.GetWidth() * 0.5, 0);
+        std::make_unique<Opponent>(gamescreen.GetWidth() * 0.5, 0);
     myOpponent.push_back(std::move(abg));
   }
   void Init() {
@@ -114,7 +114,8 @@ class Game : public graphics::AnimationEventListener,
     if (event.GetMouseAction() == graphics::MouseAction::kPressed ||
         event.GetMouseAction() == graphics::MouseAction::kDragged) {
       std::unique_ptr<PlayerProjectile> boba =
-          std::make_unique<PlayerProjectile>(myPlayer_.GetX(), myPlayer_.GetY());
+          std::make_unique<PlayerProjectile>(myPlayer_.GetX(),
+                                             myPlayer_.GetY());
       myPlayerP_.push_back(std::move(boba));
     }
   }
